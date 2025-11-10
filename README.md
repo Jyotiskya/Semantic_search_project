@@ -19,7 +19,7 @@ This project provides a full-stack backend service with:
 
 🚀 ## Quick Start Guide
 
-### Method 1: Docker Compose (Easiest - Recommended)
+### Docker Compose Method
 
 1.  **Create Project Directory:**
     ```bash
@@ -45,36 +45,6 @@ This project provides a full-stack backend service with:
 
 That's it! Your API is now running at `http://localhost:8000`.
 
-### Method 2: Manual Installation
-
-1.  **Install PostgreSQL:**
-    ```bash
-    # Example on Ubuntu
-    sudo apt-get install postgresql postgresql-contrib
-    # Create a 'user' with 'password' or update .env
-    sudo -u postgres createuser -P user 
-    sudo -u postgres createdb toolsdb -O user
-    ```
-
-2.  **Start Qdrant (using Docker):**
-    ```bash
-    docker run -d -p 6333:6333 qdrant/qdrant
-    ```
-
-3.  **Install Python Dependencies:**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate
-    pip install -r requirements.txt
-    ```
-
-4.  **Run the Application:**
-    (Ensure you have a `.env` file or exported the environment variables)
-    ```bash
-    uvicorn main:app --reload
-    ```
-
----
 
 🧪 ## Testing Your API
 
@@ -171,3 +141,5 @@ That's it! Your API is now running at `http://localhost:8000`.
 
 ![API Demo](docker.gif)
 ![API Demo](testing.gif)
+
+Developed by Jyoti
